@@ -1,10 +1,14 @@
-# Audio Encoder Probes
+# spatula
+### or, Slicing Pretrained Audio Transformers to Understand Layerwise Acoustic (features)
+
 Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [Speech Disfluency Detection with Contextual Representation and Data Distillation](https://github.com/payalmohapatra/Speech-Disfluency-Detection-with-Contextual-Representation-and-Data-Distillation)
 
 Reproduces part of English et al.'s paper on probing wav2vec embeddings, but only fits probes for the final hidden state of the encoder, as well as fitting probes for both wav2vec and whisper encoders. Uses [TIMITPhones'](https://github.com/IParraMartin/TIMITPhones/tree/main) map for convenience.
 
 ## TODOs:
 - fit similar probes over the hidden layers of the encoders
+- make code modular!
+- verify from a clean install
 - remove padding from the whisper emeddings (and voxtral, if it includes padding)
 
 ## Usage:
