@@ -12,8 +12,9 @@ Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [S
 ## Usage:
 First! Run  `generate_embeddings.ipynb` to generate and save embeddings for both wav2vec, whisper-small, and voxtral mini.
 
-- `probe_training.ipynb` fits probes to predict manner of articulation from the hidden statesaw of the encoders. 
-
+- `probe_training.ipynb` fits probes to predict manner of articulation from the hidden states of the encoders, and outputs confusion matrices
+- `phone_probe_training.ipynb` fits probes to predict phone from the hidden states, and outputs confusion matrices (although this last part should be removed) 
+- `draw_charts.ipynb` draws charts of encoder+probe accuracy across layers
 
 ## References:
 Cormac English, P., Kelleher, J.D. and Carson-Berndsen, J. ‘Domain-informed probing of wav2vec 2.0 embeddings for phonetic features’, *Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology*, pp. 83–91. doi:10.18653/v1/2022.sigmorphon-1.9. (2022).
