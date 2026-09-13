@@ -1,19 +1,20 @@
 # spatula
 ### or, Slicing Pretrained Audio Transformers to Understand Layerwise Acoustic (features)
 
-Trains probes to predict manner of articulation from internal states of audio encoders.
+Trains probes to predict manner of articulation and phone from the internal vector representations of audio encoders.
 
 Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [Speech Disfluency Detection with Contextual Representation and Data Distillation](https://github.com/payalmohapatra/Speech-Disfluency-Detection-with-Contextual-Representation-and-Data-Distillation) Uses [TIMITPhones'](https://github.com/IParraMartin/TIMITPhones/tree/main) map for convenience.
 
 ## TODOs:
 - verify from a clean install
+- add early stopping
 - remove padding from the whisper emeddings (and voxtral, if it includes padding)
 
 ## Usage:
 First! Run  `generate_embeddings.ipynb` to generate and save embeddings for both wav2vec, whisper-small, and voxtral mini.
 
 - `probe_training.ipynb` fits probes to predict manner of articulation from the hidden states of the encoders, and outputs confusion matrices
-- `phone_probe_training.ipynb` fits probes to predict phone from the hidden states, and outputs confusion matrices (although this last part should be removed) 
+- `phone_probe_training.ipynb` fits probes to predict phone from the hidden states
 - `draw_charts.ipynb` draws charts of encoder+probe accuracy across layers
 
 ## References:
