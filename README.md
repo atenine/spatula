@@ -1,19 +1,21 @@
 # spatula
 ### or, Slicing Pretrained Audio Transformers to Understand Layerwise Acoustic (features)
 
-Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [Speech Disfluency Detection with Contextual Representation and Data Distillation](https://github.com/payalmohapatra/Speech-Disfluency-Detection-with-Contextual-Representation-and-Data-Distillation)
+Trains probes to predict manner of articulation and phone from the internal vector representations of audio encoders.
 
-Reproduces part of English et al.'s paper on probing wav2vec embeddings, but only fits probes for the final hidden state of the encoder, as well as fitting probes for both wav2vec and whisper encoders. Uses [TIMITPhones'](https://github.com/IParraMartin/TIMITPhones/tree/main) map for convenience.
+Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [Speech Disfluency Detection with Contextual Representation and Data Distillation](https://github.com/payalmohapatra/Speech-Disfluency-Detection-with-Contextual-Representation-and-Data-Distillation) Uses [TIMITPhones'](https://github.com/IParraMartin/TIMITPhones/tree/main) map for convenience.
 
 ## TODOs:
 - verify from a clean install
+- add early stopping
 - remove padding from the whisper emeddings (and voxtral, if it includes padding)
 
 ## Usage:
 First! Run  `generate_embeddings.ipynb` to generate and save embeddings for both wav2vec, whisper-small, and voxtral mini.
 
-- `probe_training.ipynb` fits probes to predict manner of articulation from the hidden statesaw of the encoders. 
-
+- `probe_training.ipynb` fits probes to predict manner of articulation from the hidden states of the encoders, and outputs confusion matrices
+- `phone_probe_training.ipynb` fits probes to predict phone from the hidden states
+- `draw_charts.ipynb` draws charts of encoder+probe accuracy across layers
 
 ## References:
 Cormac English, P., Kelleher, J.D. and Carson-Berndsen, J. ‘Domain-informed probing of wav2vec 2.0 embeddings for phonetic features’, *Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology*, pp. 83–91. doi:10.18653/v1/2022.sigmorphon-1.9. (2022).
