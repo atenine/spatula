@@ -7,7 +7,7 @@ Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [S
 
 ## TODOs:
 - verify from a clean install
-- add early stopping
+- create a new (speaker-disjoint) split for evalutation
 - remove padding from the whisper emeddings (and voxtral, if it includes padding)
 
 ## Usage:
