@@ -7,6 +7,7 @@ Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [S
 
 ## TODOs:
 - verify from a clean install
+- create a new (speaker-disjoint) split for evalutation
 - remove padding from the whisper emeddings (and voxtral, if it includes padding)
 
 ## Usage:
@@ -35,5 +36,6 @@ Radford, Alec, et al. "Robust speech recognition via large-scale weak supervisio
 
 Parra, Iñigo. "TIMITPhones: TIMIT Phoneme Dataset." https://github.com/IParraMartin/TIMITPhones/tree/main. (2025).
 
+Liu, Alexander H., et al. "Voxtral." *arXiv preprint arXiv:2507.13264* (2025).
 
 Garofolo, John S., et al. TIMIT Acoustic-Phonetic Continuous Speech Corpus LDC93S1. Web Download. Philadelphia: Linguistic Data Consortium, (1993).
