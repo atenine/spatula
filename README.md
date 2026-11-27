@@ -5,6 +5,9 @@ Trains probes to predict manner of articulation and phone from the internal vect
 
 Code partially adapted from Jon Rawski's LING 165 Lab 1 and Payal Mohapatra's [Speech Disfluency Detection with Contextual Representation and Data Distillation](https://github.com/payalmohapatra/Speech-Disfluency-Detection-with-Contextual-Representation-and-Data-Distillation) Uses [TIMITPhones'](https://github.com/IParraMartin/TIMITPhones/tree/main) map for convenience.
 
+<img src=figures/layerwiseMoaAccuracy.png alt="a chart of layer-wise manner of articulation accuracies, by encoder. The wav2vec trend is decreasing. Whisper and voxtral trends are increasing." width=80%>
+<img src=figures/layerwisePhoneAccuracy.png alt="a chart of layer-wise phone label accuracies, by encoder. Like the previous chart, the wav2vec trend is decreasing. Whisper and voxtral trends are increasing." width=80%>
+
 ## TODOs:
 - verify from a clean install
 - create a new (speaker-disjoint) split for evalutation
